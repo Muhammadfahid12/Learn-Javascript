@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>APIs</title>
+  </head>
+  <body>
+    <script>
+    const apiKey ='209f6382e7b271c9c9edf471877f07c8'
+    const city = 'Faisalabad';
+ 
+    const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+    
+    // make API request
+    fetch(apiUrl)
+      .then(response => response.json())
+      .then(data => {
+        // parse weather data
+        const temperature = data.main.temp;
+        const description = data.weather[0].description;
+    
+        // log current weather conditions in Lahore
+        console.log(`Current weather in ${city}: ${description} and temperature is ${temperature}` );
+      })
+      .catch(error => {
+        console.error('Error fetching weather data:', error);
+      });
+    
+
+    
+    </script>
+  </body>
+</html>
