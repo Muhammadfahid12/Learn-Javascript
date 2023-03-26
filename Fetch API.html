@@ -7,7 +7,7 @@
   <title>Fetch APIs</title>
 </head>
 <body>
-  <button style="background-color: green;"> Fetch API</button>
+  <button style="background-color: green;" id='btn'> Fetch API</button>
 <script>
 // A fetch API is used for an HTTP request to the server
 
@@ -26,24 +26,28 @@
 // headers: An object containing headers to include in the request,
 // such as Content-Type and Authorization.
 // body: The body of the request, such as JSON or form data.
-// mode: The mode of the request, such as cors, no-cors,
-// or same-origin.(cross-origin resource sharing)
 
 
-fetch('https://jsonplaceholder.typicode.com/posts', {
-  method: 'POST',
-  headers: {
-    'Content-Type': 'application/json'
-  },
-  body: JSON.stringify({ // JSON.stringify to convert a object into a JSON string
-    //JSON.stringify is used only when we have object properties
-    title: 'name',
-    body: 'fahad',
-    userId: 1
-  })
-})
+
+let a=document.getElementById('btn')
+    a.addEventListener('click',getData)
+    function getData() {
+fetch('https://jsonplaceholder.typicode.com/posts',{
+    method:'POST',
+    headers:{
+        'Content-Type':'application/json'
+    },
+    body:JSON.stringify({
+        title:'Fetch API',
+        method:'POST'
+
+    })
+}
+)
 .then(response => response.json())
 .then(data => console.log(data))
+    }
+    getData()
 
 // .catch(error => console.error(error));
 

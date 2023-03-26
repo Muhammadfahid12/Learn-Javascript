@@ -40,6 +40,10 @@ substr(start, length)
 // // console.log(name)
 // console.log(name.trimEnd())
 
-// const str = "Hello, world!";
-// const words = str.split(" "); // split the string into an array of words
-// console.log(words); // outputs ["Hello", "world!"]
+const str = "Hello, world!";
+const words = str.split(""); // split the string into an array of words
+//console.log(words); // outputs ["Hello", "world!"]
+const rev=words.reverse();
+console.log(rev)
+const join= rev.join('')
+console.log(join)
