@@ -26,6 +26,7 @@
 // for(let i=0;i<Object.keys(a).length;i++){
 //     const a2 = a[Object.keys(a)[i]]
 //     console.log(a2)
+//     //arrays in javascript are zero-indexed
 // }
 
 //  for (const properties in a) {
@@ -35,7 +36,7 @@
 
 //  let name="Muhammad Fahid Farooq"
 //  for (const char in name){
-//     console.log(name[char])
+//     console.log(char,name[char])
 //  }
 
 // let cls = ["first","second","third","fourth","fifth","six"]
@@ -45,15 +46,15 @@
 
 
 // console.log("use of For Of Loops")
-
-// //let obj=["first","second","third","fourth","fifth","six"]
-// let obj ={
+//it represents values only but not indexes 
+// let obj=["first","second","third","fourth","fifth","six"]
+// let objs ={
 //     name: "Fahid",
 //     age: 23,
 //     gender: "male"
 // }
-//    for (let iterator of obj) {
-//     console.log(iterator)
+//    for(let indexes in objs) {
+//     console.log(objs[indexes])
 //    }
 
 
@@ -61,6 +62,10 @@
 // for (let property in  object) {
 //   console.log(property);
 // }
+
+
+//important!
+
 //  function fac(n){
 //   let a=1;
 // for(let i=1;i<=n;i++){
@@ -93,9 +98,7 @@
 //   if(value>=top){
 //   break;}
 //   else {
-//     for(let i=1;i<value;i++){
-              
-
+//     for(let i=1;i<value;i++){           
 //     }
 //   }
 // }

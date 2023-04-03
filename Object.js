@@ -1,3 +1,24 @@
+// primitve data types are copied by their value,
+// while non-primitve are copied by refernce
+
+
+//to enumrate objects we use "for in loop" and for of(by using "Object.keys or Object.entries") or also use of ("in") value
+
+//Object Cloning(we use Object.assign method )
+
+let obj={
+  name:"Muhammad Fahid Farooq",
+  age:22,
+  profession:'Web-developer',
+}
+// let Cloning= Object.assign(obj,{email:'ranafahadirshad@gmail.com'})
+//   console.log(Cloning)
+  //Another Cloning Method by use of spread operator
+let Cloned={...obj,email:'ranafahadirshad@gmail.com'}
+console.log(Cloned)
+
+
+
 // //Topics covered in this are optional chaining and dynamic ojects. 
 // let dynamic="name"
 // //Dynamic Object with example;
@@ -31,13 +52,15 @@
   
 //   console.log("using optional chaining")
 //   console.log(company?.Details?.CEO)
-function modify(object) {
- object.message = "Hello World";
-}
-const m = {
-  name: "Seven Eleven" 
-}
 
-modify(m);
 
-console.log(m.message);
+// function modify(object) {
+//  object.message = "Hello World";
+// }
+// const m = {
+//   name: "Seven Eleven" 
+// }
+
+// modify(m);
+
+// console.log(m.message);

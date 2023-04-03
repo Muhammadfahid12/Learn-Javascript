@@ -1,5 +1,6 @@
 //strings method in JavaScript
 // String length
+//string.includes 
 // String slice()
 // String substring()
 // String substr()
@@ -15,7 +16,7 @@
 // String padEnd()
 // String charAt()
 // String charCodeAt()
-// String split()
+// String split()  //convert string to array
 
 /*Extracting String Parts
 there are three methods to extract strings parts
