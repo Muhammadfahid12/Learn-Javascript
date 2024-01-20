@@ -8,6 +8,4 @@ it has (number,string,boolean,null,object,array)data types
 JSON.stringify() is used to convert an object to a string while JSON.parse()
 is used to revese to object.
 
-
-
 */

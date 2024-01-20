@@ -1,23 +1,42 @@
+//var
 
-// function increment() {
+function sum() 
+{
 
-//     let x = 10;
-//     for(let i = 0; i < 5; i++){
-//         console.log(x++);
-//     }
-    
-// }
+  var y = 12;
 
-// increment();
+}
+ console.log(y); //it won't return any error
+
+// let
 
 function increment() {
 
-    const x = 10;
-    for(let i = 0; i < 5; i++){
-        x = x+1 //this cannot occur because we are using const 
-        console.log(x);
-    }
-    
+  let x = 10;
+
+  for (let i = 0; i < 5; i++) {
+    console.log(x++);
+  }
+
 }
 
+console.log(x); //here it will return error because x is declared with let keyword and it is block scope
+
 increment();
+
+//const
+
+function decrement() {
+
+  const x = 10;
+
+  for (let i = 0; i < 5; i++) {
+
+    x = x + 1; //this cannot occur because we are using const
+    console.log(x);
+
+  }
+
+}
+
+decrement();
