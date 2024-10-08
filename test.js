@@ -4,7 +4,7 @@ function halfValue(numbers) {
 for(let i=0;i<numbers.length;i++){
     newArr.push(Math.round(numbers[i]/2))
 
-// }
+}
 // return newArr;
 // }
 // console.log(halfValue([4,7,9]))
