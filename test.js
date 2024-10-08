@@ -1,8 +1,8 @@
 //1.
-// function halfValue(numbers) {
-//     let newArr=[]
-// for(let i=0;i<numbers.length;i++){
-//     newArr.push(Math.round(numbers[i]/2))
+function halfValue(numbers) {
+    let newArr=[]
+for(let i=0;i<numbers.length;i++){
+    newArr.push(Math.round(numbers[i]/2))
 
 // }
 // return newArr;
